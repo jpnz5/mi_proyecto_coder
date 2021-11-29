@@ -1,0 +1,100 @@
+/*Reset*/
+*{
+    Margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+}
+button, textarea, input, input[type="submit" i], input[type="reset" i]{
+    appearance: none;
+    border:none;
+}
+
+/*Colors*/
+h1,h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item{ color: #2EC4B6;}
+
+footer ul a:hover, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .dropdown-item:hover {color:#ffb048;}
+
+body{color: #4e4e4e;}
+
+.btn-primary{
+    background-color: #ffb048;
+    border-color: #ffb048;
+    border-radius: 1.5rem;
+}
+.btn-primary:hover,.btn-primary:focus {
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+}
+
+/*borders */
+.rounded-3, th.table-accent, td.table-accent{
+    border-radius: 2em !important;
+}
+
+.dashed-border{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%23FFB048FF' stroke-width='1' stroke-dasharray='7%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 32px;
+    /*border: dashed 1px #ffb048;
+    border-radius: 32px;*/
+}
+
+.neutral-border{
+    border: solid 1px #d8d8d8;
+}
+
+table{
+    /*border-bottom-width: 15px !important;
+    border-color: #fff !important;*/
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
+/*background section */
+.bg-special, th.table-accent, td.table-accent{
+    background-color: #e8fcfa;
+}
+/*Animations and transitions*/
+
+body{
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+}
+
+.btn{
+    transition: background-color 0.4s;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Typography*/
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+h1, h3, .btn{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800; 
+}
+
+/*Layout*/
+
+.table{
+    width:60%;
+}
+
+.table-accent{
+    width:25%;
+}
+
+footer img{
+    float:right;
+}
